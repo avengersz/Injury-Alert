@@ -64,7 +64,9 @@ header .navbar a.active{
 .main a:hover{
     color: var(--main-color);
 }
-
+.main a.active{
+    color: var(--main-color);
+}
 #menu-icon{
     font-size: 35px;
     color: var(--text-color);
