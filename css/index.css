@@ -146,3 +146,20 @@
 .neck-button:hover + .neck-tooltip {
     display: flex;
 }
+
+.neck-tooltip {
+    display: none;
+    position: absolute;
+    top: 30%; 
+    left: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 13%; /* Adjust the width as needed */
+    word-wrap: break-word;
+}
+
+.neck-button:hover + .neck-tooltip {
+    display: flex;
+}
