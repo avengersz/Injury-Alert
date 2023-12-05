@@ -11,4 +11,138 @@
     max-height: 100%;
     /* Additional styles if needed */
   }
-  
+  .hips-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: #808080; /* Grey color */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 47%; /* Adjust the positioning based on your layout */
+    left: 48%; /* Adjust the positioning based on your layout */
+    transition: background-color 0.3s;
+    border: 5px solid #b4b4b4; /* Darker grey border */
+}
+.neck-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: #808080; /* Grey color */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 30%; /* Adjust the positioning based on your layout */
+    left: 44%; /* Adjust the positioning based on your layout */
+    transition: background-color 0.3s;
+    border: 5px solid #b4b4b4; /* Darker grey border */
+}
+.knee-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: #808080; /* Grey color */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 55%; /* Adjust the positioning based on your layout */
+    left: 42%; /* Adjust the positioning based on your layout */
+    transition: background-color 0.3s;
+    border: 5px solid #b4b4b4; /* Darker grey border */
+}
+.ankle-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: #808080; /* Grey color */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 70%; /* Adjust the positioning based on your layout */
+    left: 42%; /* Adjust the positioning based on your layout */
+    transition: background-color 0.3s;
+    border: 5px solid #b4b4b4; /* Darker grey border */
+}
+.arms-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: #808080; /* Grey color */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 33%; /* Adjust the positioning based on your layout */
+    left: 51%; /* Adjust the positioning based on your layout */
+    transition: background-color 0.3s;
+    border: 5px solid #b4b4b4; /* Darker grey border */
+}
+
+
+.hips-tooltip {
+    display: none;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 13%; /* Adjust the width as needed */
+    word-wrap: break-word;
+}
+
+.hips-button:hover + .hips-tooltip {
+    display: flex;
+}
+
+.neck-tooltip {
+    display: none;
+    position: absolute;
+    top: 30%; 
+    left: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 13%; /* Adjust the width as needed */
+    word-wrap: break-word;
+}
+
+.neck-button:hover + .neck-tooltip {
+    display: flex;
+}
