@@ -15,4 +15,7 @@
     margin-bottom: 20px;
 }
 .text-container {
+    width: 50%; /* Adjust the width as needed */
+    word-wrap: break-word;
+    line-height: 30px;
 }
