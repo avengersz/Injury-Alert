@@ -151,7 +151,6 @@
     width: 15%; /* Adjust the width as needed */
     word-wrap: break-word;
 }
-
 .ankle-button:hover + .ankle-tooltip {
     display: flex;
 }
