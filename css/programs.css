@@ -1,0 +1,7 @@
+@import url("../css/default.css");
+#container3D canvas{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    
+}
