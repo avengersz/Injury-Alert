@@ -1,0 +1,11 @@
+Model Information:
+* title:	Human Ecorche
+* source:	https://sketchfab.com/3d-models/human-ecorche-b8de7f1c8008408099254082a4bad99d
+* author:	Brook C / Revo (https://sketchfab.com/revocare)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Human Ecorche" (https://sketchfab.com/3d-models/human-ecorche-b8de7f1c8008408099254082a4bad99d) by Brook C / Revo (https://sketchfab.com/revocare) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

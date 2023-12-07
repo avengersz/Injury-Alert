@@ -28,7 +28,7 @@ const loader = new GLTFLoader();
 
 //Load the file
 loader.load(
-    `../models/scene.gltf`,
+    `models/${objToRender}/scene.gltf`,
     function (gltf) {
         //If the file is loaded, add it to the scene
         object = gltf.scene;
@@ -52,7 +52,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById("container3D").appendChild(renderer.domElement);
 
 //Set how far the camera will be from the 3D model
-camera.position.z = objToRender;
+camera.position.z = objToRender === "3D" ? 25 : 500;
 
 //Add lights to the scene, so we can actually see the 3D model
 const topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
@@ -72,6 +72,14 @@ if (objToRender === "3D") {
 function animate() {
     requestAnimationFrame(animate);
     //Here we could add some code to update the scene, adding some automatic movement
+
+
+    if (object && objToRender === "3D") {
+        //I've played with the constants here until it looked good 
+        object.rotation.y = -3 + mouseX / window.innerWidth * 3;
+        object.rotation.x = -1.2 + mouseY * 2.5 / window.innerHeight;
+    }
+    renderer.render(scene, camera);
 }
 
 //Add a listener to the window, so we can resize the window and the camera
@@ -81,6 +89,11 @@ window.addEventListener("resize", function () {
     renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
+//add mouse position listener, so we can make the eye move
+document.onmousemove = (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+}
 
 //Start the 3D rendering
 animate();
