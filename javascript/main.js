@@ -28,7 +28,7 @@ const loader = new GLTFLoader();
 
 //Load the file
 loader.load(
-    `../models/3D/scene.gltf`,
+    `models/${objToRender}/scene.gltf`,
     function (gltf) {
         //If the file is loaded, add it to the scene
         object = gltf.scene;
@@ -73,7 +73,7 @@ function animate() {
     requestAnimationFrame(animate);
     //Here we could add some code to update the scene, adding some automatic movement
 
-    //Make the eye move
+
     if (object && objToRender === "3D") {
         //I've played with the constants here until it looked good 
         object.rotation.y = -3 + mouseX / window.innerWidth * 3;
